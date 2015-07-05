@@ -1,0 +1,15 @@
+<!-- Portfolio Grid Section --> <section id="portfolio"> <div class="container"> <div class="row"> <div class="col-lg-12 text-center"> <h2>Photo Gallery</h2> <hr class="star-primary"> </div> </div> <div class="row"> <div class="slide-show" ng-controller="ModalCtrl"> <carousel interval="myInterval"> <slide ng-repeat="slide in photos" active="slide.active"> <img ng-src="{{slide.link}}" style="margin:auto"> <div class="carousel-caption"> <h4>Slide {{$index}}</h4> <p>{{slide.name}}</p> </div> </slide> </carousel> </div> <div class="col-sm-4 portfolio-item photo-gallery" ng-repeat="photo in photos" ng-controller="ModalCtrl"> <a ng-click="open('lg', photo.name, photo.link)" class="portfolio-link" data-toggle="modal"> <div class="caption"> <div class="caption-content"> <i class="fa fa-search-plus fa-3x"></i> </div> </div> <img ng-src="{{photo.link}}" class="img-responsive wow fadeInLeftBig" alt=""> </a> <script type="text/ng-template" id="myModalContent.html"><div class="modal-header portfolio-modal close-modal">
+                        <h3 class="modal-title">{{currentPhotoName}}</h3>
+                        <div class="close-modal" ng-click="cancel()" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <img ng-src="{{currentPhotoLink}}" class="img-responsive" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                    </div></script> </div> </div> </div> </section>
