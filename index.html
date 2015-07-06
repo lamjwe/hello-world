@@ -1,9 +1,91 @@
-<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.e5ff0aef.css"> <link rel="stylesheet" href="styles/main.178777a9.css"> <!-- Custom CSS --> <link href="styles/CSS/styles.css" rel="stylesheet"> <link href="styles/CSS/animate.css" rel="stylesheet"> <link href="styles/CSS/main.css" rel="stylesheet"> <!-- Custom Fonts --> <link href="styles/CSS/font-awesome.min.css" rel="stylesheet" type="text/css"> <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald" rel="stylesheet" type="text/css">  <body ng-app="angularApp"> <!--[if lt IE 7]>
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+<!--         <link rel="stylesheet" href="styles/main.css"> -->
+        <!-- endbuild -->
+        <!-- Custom CSS -->
+        <link href="styles/styles.css" rel="stylesheet">
+        <link href="styles/animate.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="styles/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald' rel='stylesheet' type='text/css'>
+    </head>
+    <body ng-app="angularApp">
+        <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]--> <div class="header"> <navgivation class="navbar navbar-default navbar-fixed-top"></navgivation> </div> <div id="top"></div> <div class=""> <div ng-view=""></div> </div> <appfooter class="footer-container"></appfooter> <div class="scroll-top page-scroll visible-xs visble-sm"> <a scrollup class="btn btn-primary"> <i class="fa fa-chevron-up"></i> </a> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+        <![endif]-->
+
+        <div class="header">
+          <navgivation class="navbar navbar-default navbar-fixed-top"></navgivation>
+        </div>
+        <div id="top"></div>
+        <div class="">
+          <div ng-view=""></div>
+        </div>
+
+        <appfooter class="footer-container"></appfooter>
+
+        <div class="scroll-top page-scroll visible-xs visble-sm">
+            <a scrollup class="btn btn-primary">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+         <script>
+           !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
            (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
            r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
            }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
            ga('create', 'UA-XXXXX-X');
-           ga('send', 'pageview');</script> <script src="scripts/vendor.b128999a.js"></script> <script src="scripts/scripts.f9729816.js"></script>  
+           ga('send', 'pageview');
+        </script>
+
+        <!-- build:js(.) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/angular-touch/angular-touch.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/modal.js"></script>
+        <script src="scripts/controllers/menu.js"></script>
+        <script src="scripts/controllers/nav.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>    
+
+        <script src="scripts/cbpAnimatedHeader.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="scripts/contact.js"></script>
+        <script src="scripts/wow.min.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
